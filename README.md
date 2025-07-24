@@ -40,3 +40,38 @@ The contract manages:
 3. Run `clarinet check` to validate contracts
 4. Deploy to testnet/mainnet as needed
 
+## Technical Details
+
+### Contract Constants
+- Minimum stake: 1 STX
+- Verification period: 24 hours (~144 blocks)
+- Maximum verifiers per stage: 10
+- Reward percentage: 50% of stake
+
+### Error Codes
+- u100: Owner only operation
+- u101: Resource not found
+- u102: Unauthorized access
+- u103: Resource already exists
+- u104: Invalid stage
+- u105: Insufficient stake
+- u106: Already verified
+- u107: Verification period ended
+
+## Deployment
+
+To deploy this contract:
+1. Configure your network settings in Clarinet.toml
+2. Use `clarinet deploy` for deployment
+3. Verify contract functionality with included test scenarios
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+
+This project is open source and available under the MIT License.
